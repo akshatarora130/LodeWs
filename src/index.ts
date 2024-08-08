@@ -16,7 +16,8 @@ const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
     origin: "https://lode-seven.vercel.app",
-    methods: ["GET", "POST"]
+    methods: ["GET", "POST"],
+    credentials: true
   },
 });
 
